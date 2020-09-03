@@ -26,4 +26,11 @@ Pyspark is version of Spark for python
     # w = Window().partitionBy('partition column').orderby(F.col('column name').desc()) # descending order 
     df.select('*', F.row_number().over(w).alias('new column')).where(F.col('new column') <= limit_num) # decending limit
     ```
+    row_number() : numbering by row
+
+    join function
+    ```python
+    tmp_df = df.filter('column1' < 1)
+    df.join(tmmp_df.select('column2', 'column3'), on='column1')
+    ```
     
