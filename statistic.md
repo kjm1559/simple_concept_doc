@@ -51,3 +51,12 @@ statistics
         ```    
         The critical values are threshold of p-values. So if statistic value exceeds critical values, then the hypothesis of normality is rejected with some significance level.
         
+    - Skewness    
+        Skewness is a measure of the asymmetry of the probability distribution of a real-valued random variable about its mean. (from [Skewness](https://en.wikipedia.org/wiki/Skewness, 'Go wikipidia'))
+        ```python
+        from scipy.stats import skew
+        import numpy as np
+        print(skew(np.random.normal(0, 1, 10000)))
+        # -0.009365932076406375 
+        ```
+        If the skew value is positive, the right side by mean has more values. Negative is opposite. The negative values is opposite.
