@@ -59,4 +59,4 @@ statistics
         print(skew(np.random.normal(0, 1, 10000)))
         # -0.009365932076406375 
         ```
-        If the skew value is positive, the right side by mean has more values. Negative is opposite. The negative values is opposite.
+        If the skew value is positive, the right side by mean skew. Negative is opposite. The negative values is opposite.
